@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vhBSiHzhhWA=",
+  "dgSpecHash": "dVaomuI4CyI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Project\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\epplus\\7.2.0\\epplus.7.2.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
