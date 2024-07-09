@@ -8,13 +8,15 @@ namespace ERP.TrainingManagement.Core.Entities
 {
     public class ApprovalRequest : BaseEntity
     {
+        public Guid Id { get; set; }
         public Guid StudentId { get; set; }
-        public Student Student { get; set; }
-
         public string Company { get; set; }
-       
-
+        
         public Guid? ApprovedById { get; set; }
-        public Coordinator ApprovedBy { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
+
+        public virtual Student Student { get; set; }
+        public virtual Coordinator ApprovedBy { get; set; }
     }
 }

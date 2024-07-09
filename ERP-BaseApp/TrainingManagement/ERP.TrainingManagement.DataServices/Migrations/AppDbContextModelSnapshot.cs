@@ -46,13 +46,13 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7c8d6c78-b2b8-4f3e-95fd-0a98a6793e14"),
+                            Id = new Guid("89885c30-945c-484b-bd78-49d45d92305b"),
                             Name = "Student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
-                            Id = new Guid("34c70c83-8751-4131-9315-f1986bd8c4ba"),
+                            Id = new Guid("dc04ab4f-ec33-43a6-a05f-1b9c4eebe869"),
                             Name = "Coordinator",
                             NormalizedName = "COORDINATOR"
                         });
@@ -184,10 +184,24 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<byte[]>("FileData")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("TEXT");
 
                     b.Property<Guid>("StudentId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("UploadDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("VacancyId")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("status")
@@ -196,6 +210,8 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("StudentId");
+
+                    b.HasIndex("VacancyId");
 
                     b.ToTable("CVUploads");
                 });
@@ -230,6 +246,42 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("InternshipVacancies");
+                });
+
+            modelBuilder.Entity("ERP.TrainingManagement.Core.Entities.RegistartionLetterUpload", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("FileData")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("UploadDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("status")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("RegistrationLetterUploads");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -377,6 +429,25 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("ERP.TrainingManagement.Core.Entities.InternshipVacancy", "InternshipVacancy")
+                        .WithMany("CVUploads")
+                        .HasForeignKey("VacancyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InternshipVacancy");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("ERP.TrainingManagement.Core.Entities.RegistartionLetterUpload", b =>
+                {
+                    b.HasOne("ERP.TrainingManagement.Core.Entities.Student", "Student")
+                        .WithMany("Registers")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Student");
                 });
 
@@ -431,6 +502,11 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ERP.TrainingManagement.Core.Entities.InternshipVacancy", b =>
+                {
+                    b.Navigation("CVUploads");
+                });
+
             modelBuilder.Entity("ERP.TrainingManagement.Core.Entities.Coordinator", b =>
                 {
                     b.Navigation("ApprovedRequests");
@@ -441,6 +517,8 @@ namespace ERP.TrainingManagement.DataServices.Migrations
                     b.Navigation("ApprovalRequests");
 
                     b.Navigation("CVUploads");
+
+                    b.Navigation("Registers");
                 });
 #pragma warning restore 612, 618
         }
