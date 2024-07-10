@@ -1,12 +1,13 @@
-﻿
+﻿@using MudBlazor
+
 <CascadingValue Value=false Name="UsePopoverProvider">
     <MudThemeProvider Theme="MyTheme"></MudThemeProvider>
 </CascadingValue>
 
 @code {
-    public static MudTheme MyTheme => new()
+    public static MudBlazor.MudTheme MyTheme => new()
         {
-            Palette = new PaletteLight()
+            PaletteLight = new PaletteLight()
             {
                 Primary = "#594AE2",
                 AppbarBackground = "#594AE2"
