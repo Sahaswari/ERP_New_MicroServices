@@ -1,4 +1,4 @@
-﻿@using ERP_GraduateManagement.DTOs.Request
+@using ERP_GraduateManagement.DTOs.Request
 @using MudBlazor
 @using FluentValidation
 @using System.Net.Http.Json
@@ -9,7 +9,7 @@
 @inject ISnackbar Snackbar
 
 <MudContainer>
-        <MudCard Class="my-4 mx-auto" Style="max-width: 1000px; ">
+    <MudCard Class="my-4 mx-auto" Style="max-width: 1000px;">
         <MudCardHeader>
             <MudText Typo="Typo.h6" Color="Color.Primary">
                 <MudIcon Icon="@Icons.Material.Filled.Science" Class="mr-2" />
@@ -17,26 +17,26 @@
             </MudText>
         </MudCardHeader>
         <MudCardContent>
-            <MudForm Model="@model" @ref="@form" Validation="@(graduateValidator.ValidateValue)" ValidationDelay="0">
+            <MudForm Model="@model" @ref="form" Validation="@(graduateValidator.ValidateValue)" ValidationDelay="0">
                 <MudGrid>
                     <MudItem xs="12">
-                        <MudTextField @bind-Value="model.RegNo" Label="Alumni Registration Number" Required="true" For="@(()=>model.RegNo)" />
+                        <MudTextField @bind-Value="model.RegNo" Label="Alumni Registration Number" Required="true" For="@(() => model.RegNo)" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTextField @bind-Value="model.FirstName" Label="First Name" Required="true" For="@(()=>model.FirstName)" />
+                        <MudTextField @bind-Value="model.FirstName" Label="First Name" Required="true" For="@(() => model.FirstName)" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTextField @bind-Value="model.LastName" Label="Last Name" Required="true" For="@(()=>model.LastName)" />
+                        <MudTextField @bind-Value="model.LastName" Label="Last Name" Required="true" For="@(() => model.LastName)" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTextField @bind-Value="model.ContactNo" Label="Contact Number" Required="true" For="@(()=>model.ContactNo)" />
+                        <MudTextField @bind-Value="model.ContactNo" Label="Contact Number" Required="true" For="@(() => model.ContactNo)" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTextField @bind-Value="model.Email" Label="Email" Required="true" For="@(()=>model.Email)" />
+                        <MudTextField @bind-Value="model.Email" Label="Email" Required="true" For="@(() => model.Email)" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudSelect Label="Specialization" @bind-Value="@model.Degree">
-                            @foreach (var option in digreeList)
+                        <MudSelect Label="Specialization" @bind-Value="model.Degree">
+                            @foreach (var option in degreeList)
                             {
                                 <MudSelectItem Value="option">@option</MudSelectItem>
                             }
@@ -48,11 +48,9 @@
                     <MudItem xs="12">
                         <MudTextField @bind-Value="model.CurrentJobPosition" Label="Current Working Position" />
                     </MudItem>
-                   
                 </MudGrid>
             </MudForm>
         </MudCardContent>
-
         <MudCardActions>
             <MudButton Disabled="@_processing" OnClick="@(async () => await Submit())" Variant="Variant.Filled" Color="Color.Primary">
                 @if (_processing)
@@ -66,32 +64,28 @@
                 }
             </MudButton>
         </MudCardActions>
-
-    </MudCard>
-    <MudCard  Class="my-4 mx-auto" Style="max-width: 1000px; ">
-    <MudPaper Class="pa-4 mt-4 custom-line-spacing" Style="padding-bottom: 40px;">
-        <h5 Style="margin-bottom: 30px;">Please use the below button for the bulk uploads.</h5>
-        <MudItem xs="12" Style="margin-bottom: 30px;">
-            <InputFile OnChange="HandleFileSelected" />
-        </MudItem>
-
-        <MudButton Disabled="@_processing" OnClick="@(async () => await UploadFile())" Variant="Variant.Filled" Color="Color.Primary">
-            @if (_processing)
-            {
-                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
-                <MudText Class="ms-2">Processing</MudText>
-            }
-            else
-            {
-                <MudText>Bulk Add</MudText>
-            }
-        </MudButton>
-
-    </MudPaper>
     </MudCard>
 
+    <MudCard Class="my-4 mx-auto" Style="max-width: 1000px;">
+        <MudPaper Class="pa-4 mt-4 custom-line-spacing" Style="padding-bottom: 40px;">
+            <h5 Style="margin-bottom: 30px;">Please use the below button for the bulk uploads.</h5>
+            <MudItem xs="12" Style="margin-bottom: 30px;">
+                <InputFile OnChange="HandleFileSelected" />
+            </MudItem>
+            <MudButton Disabled="@_processing" OnClick="@(async () => await UploadFile())" Variant="Variant.Filled" Color="Color.Primary">
+                @if (_processing)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>Bulk Add</MudText>
+                }
+            </MudButton>
+        </MudPaper>
+    </MudCard>
 </MudContainer>
-
 
 @code {
     private bool _processing = false;
@@ -101,9 +95,9 @@
 
     private HttpClient Http = new HttpClient();
     private CreateGraduateRequest model = new CreateGraduateRequest();
-    GraduateModelValidator graduateValidator = new GraduateModelValidator();
-    MudForm form;
-    private List<string> digreeList = new List<string> { "EIE", "COM" };
+    private GraduateModelValidator graduateValidator = new GraduateModelValidator();
+    private MudForm form;
+    private List<string> degreeList = new List<string> { "EIE", "COM" };
     private IBrowserFile selectedFile;
 
     public class GraduateModelValidator : AbstractValidator<CreateGraduateRequest>
@@ -116,13 +110,13 @@
 
             RuleFor(x => x.FirstName)
                 .NotEmpty().WithMessage("First Name is Required.")
-                .MinimumLength(3)
-                .MaximumLength(20);
+                .MinimumLength(3).WithMessage("First Name must be at least 3 characters long.")
+                .MaximumLength(20).WithMessage("First Name cannot be more than 20 characters long.");
 
             RuleFor(x => x.LastName)
                 .NotEmpty().WithMessage("Last Name is Required.")
-                .MinimumLength(3)
-                .MaximumLength(20);
+                .MinimumLength(3).WithMessage("Last Name must be at least 3 characters long.")
+                .MaximumLength(20).WithMessage("Last Name cannot be more than 20 characters long.");
 
             RuleFor(x => x.ContactNo)
                 .NotEmpty().WithMessage("Contact number is required.")
@@ -133,16 +127,9 @@
                 .EmailAddress().WithMessage("Invalid Email Address Format.");
         }
 
-        private async Task<bool> IsUniqueAsync(string email)
-        {
-            await Task.Delay(2000);
-            return email.ToLower() != "test@test.com";
-        }
-
         public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
         {
-            var result = await ValidateAsync(ValidationContext<CreateGraduateRequest>
-                .CreateWithOptions((CreateGraduateRequest)model, x => x.IncludeProperties(propertyName)));
+            var result = await ValidateAsync(ValidationContext<CreateGraduateRequest>.CreateWithOptions((CreateGraduateRequest)model, x => x.IncludeProperties(propertyName)));
             if (result.IsValid)
                 return Array.Empty<string>();
             return result.Errors.Select(e => e.ErrorMessage);
@@ -153,9 +140,9 @@
     {
         _processing = true;
         await form.Validate();
-        try
+        if (form.IsValid)
         {
-            if (form.IsValid)
+            try
             {
                 var jsonModel = JsonSerializer.Serialize(model);
                 var content = new StringContent(jsonModel, Encoding.UTF8, "application/json");
@@ -172,14 +159,14 @@
                     Snackbar.Add("Please Check Your Connection.", MudBlazor.Severity.Error);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                Snackbar.Add("Please Check Input Fields", MudBlazor.Severity.Error);
+                Snackbar.Add($"Error: {ex.Message}", MudBlazor.Severity.Error);
             }
         }
-        catch (Exception ex)
+        else
         {
-            Snackbar.Add($"Error: {ex.Message}", MudBlazor.Severity.Error);
+            Snackbar.Add("Please Check Input Fields", MudBlazor.Severity.Error);
         }
         _processing = false;
     }
@@ -203,7 +190,6 @@
 
             if (response.IsSuccessStatusCode)
             {
-                
                 Snackbar.Add("Graduates added successfully.", MudBlazor.Severity.Success);
             }
             else
@@ -216,6 +202,5 @@
             Snackbar.Add("No file selected.", MudBlazor.Severity.Warning);
         }
         _processing = false;
-        
     }
 }
