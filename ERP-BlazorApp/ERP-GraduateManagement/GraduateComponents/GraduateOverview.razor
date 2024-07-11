@@ -1,20 +1,20 @@
-﻿@using MudBlazor
+@using MudBlazor
 @using ERP_GraduateManagement.DTOs.Response
 @using System.Net.Http.Json
 
-<MudCard Class="my-4 mx-auto" Style="max-width: 1000px; background-color:mediumturquoise;">
+<MudCard Class="my-4 mx-auto" Style="max-width: 1000px; background-color: mediumturquoise;">
     <MudPaper Class="pa-4" Style="background-color: rgba(255, 255, 255, 0.8);">
         <div class="d-flex justify-content-center">
             <div class="chart-container" style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;">
                 <div style="flex: 1; display: flex; justify-content: center;">
-                    <MudChart ChartType="ChartType.Donut" Width="400px" Height="400px" InputData="@data" InputLabels="@labels">
+                    <MudChart ChartType="ChartType.Donut" Width="400px" Height="400px" InputData="@degreeData" InputLabels="@degreeLabels">
                         <CustomGraphics>
                             <text class="donut-inner-text" x="50%" y="40%"
                                   dominant-baseline="middle" text-anchor="middle"
                                   fill="black" font-family="Helvetica" font-size="2">Total Alumni Members</text>
                             <text class="donut-inner-text" x="50%" y="55%"
                                   dominant-baseline="middle" text-anchor="middle"
-                                  fill="black" font-family="Helvetica" font-size="5">@totalCount.ToString()</text>
+                                  fill="black" font-family="Helvetica" font-size="5">@totalDegreeCount.ToString()</text>
                         </CustomGraphics>
                     </MudChart>
                 </div>
@@ -28,7 +28,7 @@
                                       fill="black" font-family="Helvetica" font-size="2">Total Job Position Types</text>
                                 <text class="donut-inner-text" x="50%" y="55%"
                                       dominant-baseline="middle" text-anchor="middle"
-                                      fill="black" font-family="Helvetica" font-size="5">@jobData.Sum().ToString()</text>
+                                      fill="black" font-family="Helvetica" font-size="5">@totalJobCount.ToString()</text>
                             </CustomGraphics>
                         </MudChart>
                     }
@@ -43,59 +43,53 @@
 </MudCard>
 
 @code {
-    double[] data;
-    string[] labels;
-    double[] jobData;
-    string[] jobLabels;
-    int totalCount;
+    private double[] degreeData;
+    private string[] degreeLabels;
+    private double[] jobData;
+    private string[] jobLabels;
+    private int totalDegreeCount;
+    private int totalJobCount;
 
     private HttpClient Http = new HttpClient();
-    private List<GetGraduateResponse> _graduates = new List<GetGraduateResponse>();
+    private List<GetGraduateResponse> graduates = new List<GetGraduateResponse>();
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            _graduates = await Http.GetFromJsonAsync<List<GetGraduateResponse>>("https://localhost:7010/api/Graduates/Get");
+            graduates = await Http.GetFromJsonAsync<List<GetGraduateResponse>>("https://localhost:7010/api/Graduates/Get");
 
-            var distinctDegreeCounts = _graduates
+            var degreeCounts = graduates
                 .GroupBy(g => g.Degree)
                 .Select(g => new
                 {
                     Degree = g.Key,
                     Count = g.Count()
-                });
+                }).ToList();
 
-            List<string> degrees = distinctDegreeCounts.Select(d => d.Degree).ToList();
-            List<int> counts = distinctDegreeCounts.Select(d => d.Count).ToList();
+            degreeLabels = degreeCounts.Select(d => d.Degree).ToArray();
+            degreeData = degreeCounts.Select(d => (double)d.Count).ToArray();
+            totalDegreeCount = degreeCounts.Sum(d => d.Count);
 
-            data = counts.Select(x => (double)x).ToArray();
-            labels = degrees.Select(x => (string)x).ToArray();
-            totalCount = counts.Sum();
-
-            // Process data for job positions
-            var distinctJobCounts = _graduates
+            var jobCounts = graduates
                 .Where(g => !string.IsNullOrEmpty(g.CurrentJobPosition))
                 .GroupBy(g => g.CurrentJobPosition)
                 .Select(g => new
                 {
                     JobPosition = g.Key,
                     Count = g.Count()
-                });
+                }).ToList();
 
-            List<string> jobPositions = distinctJobCounts.Select(d => d.JobPosition).ToList();
-            List<int> jobCounts = distinctJobCounts.Select(d => d.Count).ToList();
+            jobLabels = jobCounts.Select(j => j.JobPosition).ToArray();
+            jobData = jobCounts.Select(j => (double)j.Count).ToArray();
+            totalJobCount = jobCounts.Sum(j => j.Count);
 
-            jobData = jobCounts.Select(x => (double)x).ToArray();
-            jobLabels = jobPositions.Select(x => (string)x).ToArray();
-
-            // Debug output to verify data
             Console.WriteLine("Job Data: " + string.Join(", ", jobData));
             Console.WriteLine("Job Labels: " + string.Join(", ", jobLabels));
         }
         catch (Exception ex)
         {
-            _graduates = null;
+            graduates = null;
             Console.WriteLine("Error fetching data: " + ex.Message);
         }
     }
