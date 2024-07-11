@@ -39,6 +39,7 @@ namespace ERP.TrainingManagement.DataServices.Repository
                 result.Company = approvalRequest.Company;
                 result.StudentId = approvalRequest.StudentId;
                 result.ApprovedById = approvalRequest.ApprovedById;
+                
 
              
                 return true;

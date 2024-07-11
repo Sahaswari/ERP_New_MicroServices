@@ -35,6 +35,8 @@ namespace ERP.TrainingManagement.DataServices.Repository
                 result.Description=internship.Description;
                 result.Title=internship.Title;
                 result.Company=internship.Company;
+                result.Company_Person=internship.Company_Person;
+                result.address=internship.address;
                 
 
 

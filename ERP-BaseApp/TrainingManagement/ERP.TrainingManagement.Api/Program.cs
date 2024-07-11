@@ -82,11 +82,6 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
-builder.Services.AddAutoMapper(typeof(DomainToResponseProfile), typeof(RequestToDomainProfile));
-
-
-// Add AutoMapper
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
 

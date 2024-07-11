@@ -12,6 +12,10 @@ namespace ERP.TrainingManagement.Core.Entities
         public string Description { get; set; }
         public string Company { get; set; }
 
+        public string Company_Person { get; set; }
+
+        public string address { get; set; }
+
         public virtual ICollection<CVUpload> CVUploads { get; set; }
 
         //public Guid CoordinatorId { get; set; }
