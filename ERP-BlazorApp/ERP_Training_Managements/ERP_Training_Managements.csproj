@@ -6,10 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Componenets\LoginPage.razor" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
@@ -20,15 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Componenets\LoginPage.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Componenets\LoginPage.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Componenets\LoginPage.razor" />
+    <Folder Include="Componenets\" />
   </ItemGroup>
 
 </Project>

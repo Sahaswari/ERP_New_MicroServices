@@ -1,4 +1,4 @@
-﻿x@
+﻿@page "/TrainingLogin"
 @using System.Net.Http.Headers
 @using System.Text
 @using System.Text.Json
@@ -9,6 +9,7 @@
 @inject ISnackbar Snackbar
 @inject HttpClient Http
 @inject AuthenticationStateProvider AuthStateProvider
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <MudPaper Class="pa-4 mx-auto" Elevation="4" Style="width: 400px;">
     <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom="true">Login</MudText>
@@ -34,13 +35,14 @@
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadAsStringAsync();
-                StoreToken(token);
+                await StoreToken(token);
                 var claims = ParseClaimsFromJwt(token);
 
                 var identity = new ClaimsIdentity(claims, "jwt");
                 var user = new ClaimsPrincipal(identity);
 
-                NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(user)));
+                var customAuthStateProvider = AuthStateProvider as CustomAuthenticationStateProvider;
+                customAuthStateProvider?.NotifyUserAuthentication(token);
 
                 Snackbar.Add("Login successful", Severity.Success);
                 Navigation.NavigateTo("/dashboard");
@@ -56,12 +58,9 @@
         }
     }
 
-    private void StoreToken(string token)
+    private async Task StoreToken(string token)
     {
-        // Store the token securely, e.g., in local storage
-        // This is a simplified example, you might want to use a more secure storage mechanism
-        // You might need to use a library like Blazored.LocalStorage for this
-        // Example: localStorage.SetItem("authToken", token);
+        await localStorage.SetItemAsync("authToken", token);
     }
 
     private IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
@@ -81,18 +80,6 @@
             case 3: base64 += "="; break;
         }
         return Convert.FromBase64String(base64);
-    }
-
-    private void NotifyAuthenticationStateChanged(Task<AuthenticationState> task)
-    {
-        var authProvider = AuthStateProvider as CustomAuthenticationStateProvider;
-        authProvider?.NotifyUserAuthentication(task.Result.User.Identity.Name);
-    }
-
-    private class LoginModel
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
@@ -118,5 +105,11 @@
                 Navigation.NavigateTo("/dashboard");
             }
         }
+    }
+
+    private class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
