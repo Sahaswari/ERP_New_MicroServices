@@ -1,0 +1,253 @@
+﻿<style >
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    margin-top: 16px;
+    border-radius: 70px;
+    border: 20px solid #4b7af86e;
+    background-color: #4d678558;
+    padding-top: 20px;
+    min-height: 100vh;
+    border-right: 1px solid #dee2e6;
+    color: #191515;
+    transition: background-color 0.3s ease;
+}
+
+    #sidebar .nav-link {
+        color: #0d0909;
+        font-weight: 500;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        #sidebar .nav-link:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #sidebar .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+    #sidebar .nav-item .collapse .nav-link {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    #sidebar .nav-link .icon {
+        margin-right: 10px;
+    }
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+.nav-link svg {
+    transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
+.nav-link:hover svg {
+    transform: scale(1.1);
+    fill: #007bff; /* Change to your desired hover color */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card {
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    cursor: pointer; /* Change cursor to pointer for better usability */
+}
+
+.card-content {
+    display: none; /* Hide by default */
+    padding: 10px;
+}
+
+.job-portal-card:hover {
+    background-color: lightblue; /* Example hover color for job portal card */
+}
+
+.request-letters-card:hover {
+    background-color: lightgoldenrodyellow; /* Example hover color for request letters card */
+}
+
+.registration-letter-card:hover {
+    background-color: lightgreen; /* Example hover color for registration letter card */
+}
+
+
+.buttonn {
+    width: 100%;
+    padding: 12.5px 20px;
+    border: 55px;
+    border-radius: 1000px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+    .buttonn:hover {
+        background-color: #6fc5ff;
+        box-shadow: 0 0 20px #6fc5ff50;
+        transform: scale(1.1);
+    }
+
+    .buttonn:active {
+        background-color: #3d94cf;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        box-shadow: none;
+        transform: scale(0.98);
+    }
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+    .title::before, .title::after {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color: royalblue;
+    }
+
+    .title::before {
+        width: 18px;
+        height: 18px;
+        background-color: royalblue;
+    }
+
+    .title::after {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+    }
+
+.message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+    .signin a {
+        color: royalblue;
+    }
+
+        .signin a:hover {
+            text-decoration: underline royalblue;
+        }
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+    .form label .input {
+        width: 100%;
+        padding: 10px 10px 20px 10px;
+        outline: 0;
+        border: 1px solid rgba(105, 105, 105, 0.397);
+        border-radius: 10px;
+    }
+
+        .form label .input + span {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            color: grey;
+            font-size: 0.9em;
+            cursor: text;
+            transition: 0.3s ease;
+        }
+
+        .form label .input:placeholder-shown + span {
+            top: 15px;
+            font-size: 0.9em;
+        }
+
+        .form label .input:focus + span, .form label .input:valid + span {
+            top: 30px;
+            font-size: 0.7em;
+            font-weight: 600;
+        }
+
+        .form label .input:valid + span {
+            color: green;
+        }
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+}
+
+    .submit:hover {
+        background-color: rgb(56, 90, 194);
+    }
+
+</style >
