@@ -1,0 +1,71 @@
+﻿@using ERP_GraduateManagement.DTOs.Response
+@using MudBlazor
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+
+<MudContainer MaxWidth="MaxWidth.Medium">
+    <MudTable Items="_graduates">
+        <HeaderContent>
+            <MudTh>Full Name</MudTh>
+            <MudTh>Degree</MudTh>
+            <MudTh>Current Company</MudTh>
+            <MudTh>Position</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Full Name">@context.FullName</MudTd>
+                <MudTd DataLabel="Degree">@context.Degree</MudTd>
+                <MudTd DataLabel="Current Company">@context.CurrentCompany</MudTd>
+                <MudTd DataLabel="Position">@context.CurrentJobPosition</MudTd>
+            </RowTemplate>
+            <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+        </MudTable>
+
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="AddGraduate">Add New Graduate</MudButton>
+    </MudContainer>
+
+    @code {
+    private List<GetGraduateResponse> _graduates = new List<GetGraduateResponse>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadGraduates();
+    }
+
+    private async Task LoadGraduates()
+    {
+        try
+        {
+            _graduates = await Http.GetFromJsonAsync<List<GetGraduateResponse>>("https://localhost:7010/api/Graduates/Get");
+        }
+        catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+        {
+            Snackbar.Add($"Unauthorized: {ex.Message}", Severity.Error);
+        }
+        catch (HttpRequestException ex)
+        {
+            Snackbar.Add($"HTTP Error: {ex.Message}", Severity.Error);
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Error loading graduates: {ex.Message}", Severity.Error);
+        }
+    }
+
+    private async Task AddGraduate()
+    {
+        var parameters = new DialogParameters();
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small, FullWidth = true };
+        var dialog = DialogService.Show<AddGraduateDialog>("Add New Graduate", parameters, options);
+        var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            await LoadGraduates();
+        }
+    }
+}
+
