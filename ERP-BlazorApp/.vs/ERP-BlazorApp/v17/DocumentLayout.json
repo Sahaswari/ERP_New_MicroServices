@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D8AD24B-9F53-4CEA-8F4C-3A28E1110AA0}|ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj|c:\\users\\asus\\desktop\\final\\erp_new_microservices\\erp-blazorapp\\erp-labequipmentmanagement\\labequipmentcomponents\\labschedule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D8AD24B-9F53-4CEA-8F4C-3A28E1110AA0}|ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj|solutionrelative:erp-labequipmentmanagement\\labequipmentcomponents\\labschedule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D8AD24B-9F53-4CEA-8F4C-3A28E1110AA0}|ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj|c:\\users\\asus\\desktop\\final\\erp_new_microservices\\erp-blazorapp\\erp-labequipmentmanagement\\labequipmentcomponents\\addlabequipment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D8AD24B-9F53-4CEA-8F4C-3A28E1110AA0}|ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj|solutionrelative:erp-labequipmentmanagement\\labequipmentcomponents\\addlabequipment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{925654CF-7EFF-4D1D-BC98-2B41F5BDC682}|ERP.BlazorUI\\ERP.BlazorUI.csproj|c:\\users\\asus\\desktop\\final\\erp_new_microservices\\erp-blazorapp\\erp.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{925654CF-7EFF-4D1D-BC98-2B41F5BDC682}|ERP.BlazorUI\\ERP.BlazorUI.csproj|solutionrelative:erp.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +58,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LabSchedule.razor",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\LabEquipmentComponents\\LabSchedule.razor",
+              "RelativeDocumentMoniker": "ERP-LabEquipmentManagement\\LabEquipmentComponents\\LabSchedule.razor",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\LabEquipmentComponents\\LabSchedule.razor",
+              "RelativeToolTip": "ERP-LabEquipmentManagement\\LabEquipmentComponents\\LabSchedule.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-13T07:12:33.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AddLabEquipment.razor",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\LabEquipmentComponents\\AddLabEquipment.razor",
+              "RelativeDocumentMoniker": "ERP-LabEquipmentManagement\\LabEquipmentComponents\\AddLabEquipment.razor",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\LabEquipmentComponents\\AddLabEquipment.razor",
+              "RelativeToolTip": "ERP-LabEquipmentManagement\\LabEquipmentComponents\\AddLabEquipment.razor",
+              "ViewState": "AQIAANUAAAAAAAAAAAAQwO8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-13T07:05:01.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LabEquipmentHome.razor",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Components\\Pages\\Department\\LabManagement\\LabEquipmentHome.razor",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Components\\Pages\\Department\\LabManagement\\LabEquipmentHome.razor",
@@ -58,12 +92,11 @@
               "RelativeToolTip": "ERP.BlazorUI\\Components\\Pages\\Department\\LabManagement\\LabEquipmentHome.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T17:05:23.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T17:05:23.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DashBoard.razor",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Components\\Pages\\Department\\Training\\DashBoard.razor",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\DashBoard.razor",
@@ -71,12 +104,11 @@
               "RelativeToolTip": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\DashBoard.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T17:04:55.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T17:04:55.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CustomAuthenticationStateProvider.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Components\\Pages\\Department\\Training\\CustomAuthenticationStateProvider.cs",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\CustomAuthenticationStateProvider.cs",
@@ -84,12 +116,11 @@
               "RelativeToolTip": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\CustomAuthenticationStateProvider.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:00:12.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T17:00:12.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Components\\App.razor",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Components\\App.razor",
@@ -97,25 +128,24 @@
               "RelativeToolTip": "ERP.BlazorUI\\Components\\App.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T16:47:52.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T16:47:52.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Program.cs",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Program.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Program.cs",
               "RelativeToolTip": "ERP.BlazorUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAnAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAB4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T16:44:50.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LoginForTraining.razor",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\Components\\Pages\\Department\\Training\\LoginForTraining.razor",
               "RelativeDocumentMoniker": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\LoginForTraining.razor",
@@ -123,8 +153,7 @@
               "RelativeToolTip": "ERP.BlazorUI\\Components\\Pages\\Department\\Training\\LoginForTraining.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T16:35:47.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T16:35:47.019Z"
             }
           ]
         },

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj",
         "projectName": "ERP-GraduateManagement",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj",
         "projectName": "ERP-LabEquipmentManagement",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,6 +117,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,6 +130,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -150,21 +170,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj",
         "projectName": "ERP-LabScheduleManagement",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,6 +196,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -184,6 +209,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -219,21 +249,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
         "projectName": "ERP.BlazorUI",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\ERP.BlazorUI.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP.BlazorUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,29 +275,30 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-GraduateManagement\\ERP-GraduateManagement.csproj"
               },
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabEquipmentManagement\\ERP-LabEquipmentManagement.csproj"
               },
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP-LabScheduleManagement\\ERP-LabScheduleManagement.csproj"
               },
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj"
               },
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj"
               },
-              "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj": {
-                "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj"
+              "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj"
               }
             }
           }
@@ -272,6 +307,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -318,21 +358,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj",
         "projectName": "ERP_Training_Managements",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\ERP_Training_Managements.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\ERP_Training_Managements\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -340,6 +384,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -352,6 +397,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -379,21 +429,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj",
         "projectName": "ERP-StudentRegistration",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\ERP-StudentRegistration.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-StudentRegistration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -401,6 +455,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -413,6 +468,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -448,21 +508,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj",
         "projectName": "ERP-WorkLoadManagement",
-        "projectPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj",
-        "packagesPath": "C:\\Users\\Shakila Madhushan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shakila Madhushan\\OneDrive\\Desktop\\riyaji\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\ERP-WorkLoadManagement.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Final\\ERP_New_MicroServices\\ERP-BlazorApp\\Lib\\ERP-WorkLoadManagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shakila Madhushan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -470,6 +534,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -482,6 +547,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -517,7 +587,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
